@@ -1,4 +1,4 @@
-/*#include<stdio.h>
+#include<stdio.h>
 #include<stdlib.h>
 int k;
 typedef struct node {
@@ -141,18 +141,17 @@ int main()
 	sum1->pre=NULL;
 	init(p);
 	init(sum1);
-    for(i=1;i<=500;i++)
-	{
-		insert(p,0);
-		insert(sum1,0);
-	}
-	SumAll(p,suml);
-	traverse(sum1);
-	destorylist(p);
-	destorylist(sum1);
-	return 0;
-}*/
-#include<stdio.h>
+    for (i = 1; i <= 500; i++) {
+        insert(p, 0);
+        insert(sum1, 0);
+    }
+    SumAll(p, suml);
+    traverse(sum1);
+    destorylist(p);
+    destorylist(sum1);
+    return 0;
+}
+/*#include<stdio.h>
 #include<stdlib.h>
 
 int k;
@@ -262,7 +261,7 @@ int main() {
     destorylist(p);
     destorylist(sum);
     return 0;
-}
+}//
 //
 // Created by sqx08 on 2020/4/24.
 //
